@@ -1,0 +1,31 @@
+.blogDetailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin-top: -3rem;
+}
+.blogDetailContainer h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.blogDetailContainer h3 {
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.blogDetailContainer h5 {
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .blogDetailContainer {
+    width: 95%;
+  }
+  .blogDetailContainer h1 {
+    font-size: 2rem;
+  }
+  .blogDetailContainer img {
+    width: 20rem;
+  }
+}

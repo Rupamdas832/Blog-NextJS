@@ -1,0 +1,12 @@
+.header {
+  color: var(--Blue);
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: -5rem;
+}
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 3rem;
+  }
+}
