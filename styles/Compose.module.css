@@ -1,0 +1,28 @@
+.composeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 1rem 0;
+}
+.row input {
+  padding: 0.5rem;
+  font-size: medium;
+}
+.row textarea {
+  height: 10rem;
+  font-size: medium;
+  padding: 0.5rem;
+  height: 10rem;
+}
+@media (max-width: 600px) {
+  .row {
+    width: 90%;
+  }
+}

@@ -4,6 +4,7 @@ import blogDetailStyles from "../../../styles/BlogDetail.module.css";
 
 const index = ({ post }) => {
   const { body, createdAt, desc, img, name, _id, title } = post;
+  console.log(post);
   return (
     <div className={blogDetailStyles.blogDetailContainer}>
       <h1>{title}</h1>
@@ -29,10 +30,6 @@ export const getServerSideProps = async (context) => {
     console.log(error);
   }
 
-  //   const { data, status } = await axios.get(
-  //     `https://practice-server-with-database.rupamdas.repl.co/posts/${context.params.id}`
-  //   );
-  //   let post = data.post;
   return {
     props: {
       post,
